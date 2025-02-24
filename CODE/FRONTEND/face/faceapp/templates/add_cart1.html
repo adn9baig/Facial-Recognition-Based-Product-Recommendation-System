@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_cart</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+<body>
+    <div class="ad_rec">
+
+        <form method="post" action="{% url 'buy' %}" onsubmit="return validateForm()">
+            {% csrf_token %}
+            <br><br>
+            <label>Enter name</label>
+            <br>
+            <input type="text" name="name" placeholder="Buyer name" style="width: 200px; height: 25px;" required>
+            <br><br>
+            <label>Enter card number</label>
+            <br>
+            <input type="text" name="cr" maxlength="16" placeholder="Card number" style="width: 200px; height: 25px;" required>
+            <br><br>
+            <label>Enter CVV</label>
+            <br>
+            <input type="password" maxlength="3" name="cv" placeholder="Enter CVV" style="width: 200px; height: 25px;" required>
+            <br><br>
+            <label>Enter bank name</label>
+            <br>
+            <input type="text" name="bn" placeholder="Enter bank name" style="width: 200px; height: 25px;" required>
+            <br><br>
+            <label>Enter postal pin</label>
+            <br>
+            <input type="text" name="pn" maxlength="6" placeholder="Postal pin" style="width: 200px; height: 25px;" required>
+            <br><br>
+            <label>Enter mobile number</label>
+            <br>
+            <input type="text" name="mn" maxlength="10" placeholder="Mobile number" style="width: 200px; height: 25px;" required>
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+        </form>
+    
+        <script>
+            function validateForm() {
+                // Example: You can add custom JavaScript validation here
+                var cardNumber = document.getElementsByName('cr')[0].value;
+                var cvv = document.getElementsByName('cv')[0].value;
+                var mobileNumber = document.getElementsByName('mn')[0].value;
+    
+                if (!/^\d{16}$/.test(cardNumber)) {
+                    alert('Invalid card number');
+                    return false;
+                }
+    
+                if (!/^\d{3}$/.test(cvv)) {
+                    alert('Invalid CVV');
+                    return false;
+                }
+    
+                if (!/^\d{10}$/.test(mobileNumber)) {
+                    alert('Invalid mobile number');
+                    return false;
+                }
+    
+                // Add your validation logic here as needed
+    
+                return true; // Form will be submitted if true
+            }
+        </script>
+    </div>
+</body>
+</html>
+

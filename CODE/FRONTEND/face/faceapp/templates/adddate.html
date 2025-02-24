@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_cart</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+<body>
+    <div class="ad_rec">
+        <form method="post" action="{%url 'adddate'%}">
+            {% csrf_token %}
+            <br><br>
+            <label>Enter Date</label>
+            <br>
+            <input type="Date" name="date"  style="width: 200px; height:25px;">
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+        </form>
+    </div>
+</body>
+</html>
+

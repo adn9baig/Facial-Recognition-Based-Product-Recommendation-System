@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/adminstyle.css"> <!-- Link the CSS file -->
+    <title>face</title>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li>
+            <a href="/User_detils" class="nav-link">UserDetails</a>
+        </li>
+        <li>
+            <a href="/orderdet" class="nav-link">OrderDetails</a>
+        </li>
+        <li>
+            <a href="/" class="nav-link">Logout</a>
+        </li>
+    </ul>
+</div>
+{% block code %}
+{% endblock %}
+{% if msg == 'sucess' %}
+<div class="header">
+<h2>WELLCOME ADMIN</h2>
+<div>
+{% endif %}
+<!-- Content sections -->
+<div class="content-home">
+    <!-- Content for the Home page -->
+</div>
+<div class="content-login">
+    <!-- Content for the Login page -->
+</div>
+<div class="content-registration">
+    <!-- Content for the Registration page -->
+</div>
+
+<script src="/static/script.js"></script> <!-- Link the JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "Admin.html" %}
+{% block code %}
+<div class="view_chart">
+    
+    <form method="post" action="{% url 'changedate'%}">
+        {% csrf_token %}
+        <table>
+            <thead>
+                <th>Buyer name</th>
+                <th>Mobile number</th>
+                <th>Image</th>
+                <th>Product name</th>
+                <th>Product Price</th>
+                <th>Delivery Date</th>
+                <th>Change Date</th>
+            </thead>
+            <tbody>
+                {% for i in data %}
+                <tr>
+                    <td>{{ i.u_name }}</td>
+                    <td>{{ i.m_num }}</td>
+                    <td><img src="{{ i.image2 }}" style="height: 150px;"></td>
+                    <td>{{ i.name2 }}</td>
+                    <td>{{ i.price2 }}</td>
+                    <td>{{ i.de_date }}</td>
+                    <td>
+                        <button type="submit" value="{{ i.id }}" name="p_id" style="background-color: blue; color:white;">Changedate</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
+    
+
+{% if msg12 == 'suc' %}
+<script type="text/javascript">
+    alert('Date is updated')
+</script>
+{% endif %}
+</div>
+{% endblock %}

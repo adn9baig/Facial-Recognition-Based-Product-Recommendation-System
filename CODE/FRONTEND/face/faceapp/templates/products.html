@@ -1,0 +1,1321 @@
+{% extends "base1.html" %}
+{% block code %}
+
+{% if msg1 == 'tshirt' %}
+<div class="rec">
+    <form method="post" action="{%url 'tshitsrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output">
+    <h6>{{name.0}}</h6>
+    <img src="{{image.0}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.0}}</h2>
+    <input type="hidden" value="{{name.0}}" name="na">
+    <input type="hidden" value="{{image.0}}" name="im">
+    <input type="hidden" value="{{price.0}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output1">
+    <h6>{{name.1}}</h6>
+    <img src="{{image.1}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.1}}</h2>
+    <input type="hidden" value="{{name.1}}" name="na">
+    <input type="hidden" value="{{image.1}}" name="im">
+    <input type="hidden" value="{{price.1}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output2">
+    <h6>{{name.2}}</h6>
+    <img src="{{image.2}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.2}}</h2>
+    <input type="hidden" value="{{name.2}}" name="na">
+    <input type="hidden" value="{{image.2}}" name="im">
+    <input type="hidden" value="{{price.2}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output3">
+    <h6>{{name.3}}</h6>
+    <img src="{{image.3}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.3}}</h2>
+    <input type="hidden" value="{{name.3}}" name="na">
+    <input type="hidden" value="{{image.3}}" name="im">
+    <input type="hidden" value="{{price.3}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output4">
+    <h6>{{name.4}}</h6>
+    <img src="{{image.4}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.4}}</h2>
+    <input type="hidden" value="{{name.4}}" name="na">
+    <input type="hidden" value="{{image.4}}" name="im">
+    <input type="hidden" value="{{price.4}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output5">
+    <h6>{{name.5}}</h6>
+    <img src="{{image.5}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.5}}</h2>
+    <input type="hidden" value="{{name.5}}" name="na">
+    <input type="hidden" value="{{image.5}}" name="im">
+    <input type="hidden" value="{{price.5}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output6">
+    <h6>{{name.6}}</h6>
+    <img src="{{image.6}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.6}}</h2>
+    <input type="hidden" value="{{name.6}}" name="na">
+    <input type="hidden" value="{{image.6}}" name="im">
+    <input type="hidden" value="{{price.6}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output7">
+    <h6>{{name.7}}</h6>
+    <img src="{{image.7}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.7}}</h2>
+    <input type="hidden" value="{{name.7}}" name="na">
+    <input type="hidden" value="{{image.7}}" name="im">
+    <input type="hidden" value="{{price.7}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output8">
+    <h6>{{name.8}}</h6>
+    <img src="{{image.8}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.8}}</h2>
+    <input type="hidden" value="{{name.8}}" name="na">
+    <input type="hidden" value="{{image.8}}" name="im">
+    <input type="hidden" value="{{price.8}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+    
+    
+    <form method="post" action="{%url 'refer'%}">
+        {% csrf_token %}
+    <div class="output9">
+    <h6>{{name.9}}</h6>
+    <img src="{{image.9}}" style="height: 150px;">
+    <h2 style="color: black;">Rs{{price.9}}</h2>
+    <input type="hidden" value="{{name.9}}" name="na">
+    <input type="hidden" value="{{image.9}}" name="im">
+    <input type="hidden" value="{{price.9}}" name="pr">
+    <button type="submit">Add to Chart</button>
+    </form>
+    </div>
+
+{% elif msg1 == 'shirt' %}
+<div class="rec">
+    <form method="post" action="{%url 'shirtsrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+{% elif msg1 == 'Shoes' %}
+<div class="rec">
+    <form method="post" action="{%url 'shoesrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+{% elif msg1 == 'mens' %}
+<div class="rec">
+    <form method="post" action="{%url 'menrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+{% elif msg1 == 'kid' %}
+<div class="rec">
+    <form method="post" action="{%url 'kidclrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+{% elif msg1 == 'womens' %}
+<div class="rec">
+    <form method="post" action="{%url 'womenrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+{% elif msg1 == 'cam' %}
+<div class="rec">
+    <form method="post" action="{%url 'camnrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+{% elif msg1 == 'car' %}
+<div class="rec">
+    <form method="post" action="{%url 'carrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+{% elif msg1 == 'head' %}
+<div class="rec">
+    <form method="post" action="{%url 'headrec'%}">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Search..">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output">
+<h6>{{name.0}}</h6>
+<img src="{{image.0}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.0}}</h2>
+<input type="hidden" value="{{name.0}}" name="na">
+<input type="hidden" value="{{image.0}}" name="im">
+<input type="hidden" value="{{price.0}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output1">
+<h6>{{name.1}}</h6>
+<img src="{{image.1}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.1}}</h2>
+<input type="hidden" value="{{name.1}}" name="na">
+<input type="hidden" value="{{image.1}}" name="im">
+<input type="hidden" value="{{price.1}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output2">
+<h6>{{name.2}}</h6>
+<img src="{{image.2}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.2}}</h2>
+<input type="hidden" value="{{name.2}}" name="na">
+<input type="hidden" value="{{image.2}}" name="im">
+<input type="hidden" value="{{price.2}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output3">
+<h6>{{name.3}}</h6>
+<img src="{{image.3}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.3}}</h2>
+<input type="hidden" value="{{name.3}}" name="na">
+<input type="hidden" value="{{image.3}}" name="im">
+<input type="hidden" value="{{price.3}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output4">
+<h6>{{name.4}}</h6>
+<img src="{{image.4}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.4}}</h2>
+<input type="hidden" value="{{name.4}}" name="na">
+<input type="hidden" value="{{image.4}}" name="im">
+<input type="hidden" value="{{price.4}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output5">
+<h6>{{name.5}}</h6>
+<img src="{{image.5}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.5}}</h2>
+<input type="hidden" value="{{name.5}}" name="na">
+<input type="hidden" value="{{image.5}}" name="im">
+<input type="hidden" value="{{price.5}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output6">
+<h6>{{name.6}}</h6>
+<img src="{{image.6}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.6}}</h2>
+<input type="hidden" value="{{name.6}}" name="na">
+<input type="hidden" value="{{image.6}}" name="im">
+<input type="hidden" value="{{price.6}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output7">
+<h6>{{name.7}}</h6>
+<img src="{{image.7}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.7}}</h2>
+<input type="hidden" value="{{name.7}}" name="na">
+<input type="hidden" value="{{image.7}}" name="im">
+<input type="hidden" value="{{price.7}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output8">
+<h6>{{name.8}}</h6>
+<img src="{{image.8}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.8}}</h2>
+<input type="hidden" value="{{name.8}}" name="na">
+<input type="hidden" value="{{image.8}}" name="im">
+<input type="hidden" value="{{price.8}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+
+
+<form method="post" action="{%url 'refer'%}">
+    {% csrf_token %}
+<div class="output9">
+<h6>{{name.9}}</h6>
+<img src="{{image.9}}" style="height: 150px;">
+<h2 style="color: black;">Rs{{price.9}}</h2>
+<input type="hidden" value="{{name.9}}" name="na">
+<input type="hidden" value="{{image.9}}" name="im">
+<input type="hidden" value="{{price.9}}" name="pr">
+<button type="submit">Add to Chart</button>
+</form>
+</div>
+{% endif %}
+
+
+{% if msg == 'invalid' %}
+<script type="text/javascript">
+alert('item is not ther')
+</script>
+{% endif %}
+ 
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base1.html" %}
+{% block code %}
+<div class="view_chart">
+    <h2><a href="/buy_pro">Back</a></h2>
+    <form method="post" action="{% url 'view_chart' %}">
+        {% csrf_token %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Buy Product</th>
+                    <th>Remove Product</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in data %}
+                <tr>
+                    <td><img src="{{ product.image1 }}" alt="{{ product.name1 }}"></td>
+                    <td>{{ product.name1 }}</td>
+                    <td><b>Rs{{ product.price1 }}</b></td>
+                    <td>
+                        <button type="submit" value="{{ product.id }}" name="id1">Buy</button>
+                    </td>
+                    <td>
+
+                        <button type="submit" value="{{ product.id }}" name="id2">Remove</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
+    
+
+{% if m == 'suc' %}
+<script type="text/javascript">
+    alert('Orderd Removed')
+</script>
+{% endif %}
+</div>
+{% endblock %}

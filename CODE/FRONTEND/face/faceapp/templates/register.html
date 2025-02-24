@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block code %}
+<div class="camera">
+    <br><br>
+    <h1 style="color: wheat;">User Registration</h1>
+    <form method="post" action="{%url 'register'%}">
+        {% csrf_token %}
+        <br>
+        <h4>{{id}}</h4>
+        <input type="hidden" value="{{id}}" name="id">
+        <input type="text" name="name" placeholder="Name">
+        <br>
+        <br>
+        <input type="text" name="address" placeholder="Address">
+        <br>
+        <br>
+        <input type="text" pattern="[7-9]{1}[0-9]{9}" name="phone_number" placeholder="Phone Number" maxlength="10" required>
+        <br><br>
+        <button type="submit" value="Register">Register</button>
+    </form>
+
+    <script src="/static/reg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@1.1.1"></script>
+    <br><br>
+{% endblock %}

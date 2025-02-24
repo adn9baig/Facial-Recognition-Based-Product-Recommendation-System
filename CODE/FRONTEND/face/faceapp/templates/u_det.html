@@ -1,0 +1,19 @@
+{% extends "Admin.html" %}
+{% block code %}
+<div class="udet">
+    <table>
+        <tr>
+        <th>Username</th>
+        <th>Address</th>
+        <th>PhoneNo</th>
+    </tr>
+        {% for i in data%}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.phone_number}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

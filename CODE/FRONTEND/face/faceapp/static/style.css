@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('/static/img/face.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    background-color: blueviolet;
+    color: blueviolet;
+    border-style: solid;
+    text-align: justify;
+    box-shadow: 10px 20px 20px;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.nav ul li{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    text-decoration-line: underline;
+    color: white;
+}
+
+.header{
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    box-shadow: 10px 20px 20px;
+}
+
+.camera{
+    top: 50%;
+    background-color: blueviolet;
+    border-radius: 20px;
+    height: 250px;
+    box-shadow: 20px 20px 40px;
+    left: 41%;
+    text-align: center;
+    position: absolute;
+}
+
+.camera button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    color: white;
+}
+
+.rec{
+    top: 20%;
+    background-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: 20px 20px 40px;
+    left: 5%;
+    text-align: center;
+    position: absolute;
+}
+
+.rec button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    color: white;
+}
+
+.output{
+    top: 30%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 5%;
+    text-align: center;
+    position: absolute;
+}
+
+.output h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+} 
+
+
+.output1{
+    top: 30%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 20%;
+    text-align: center;
+    position: absolute;
+}
+
+.output1 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output1 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    color: white;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+.output2{
+    top: 30%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 35%;
+    text-align: center;
+    position: absolute;
+}
+
+.output2 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output2 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+
+.output3{
+    top: 30%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 55%;
+    text-align: center;
+    position: absolute;
+}
+
+.output3 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output3 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+.output4{
+    top: 30%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 70%;
+    text-align: center;
+    position: absolute;
+}
+
+.output4 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output4 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+
+.output5{
+    top: 80%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 5%;
+    text-align: center;
+    position: absolute;
+}
+
+.output5 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output5 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+
+.output6{
+    top: 80%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 20%;
+    text-align: center;
+    position: absolute;
+}
+
+.output6 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output6 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+
+.output7{
+    top: 80%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 35%;
+    text-align: center;
+    position: absolute;
+}
+
+.output7 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output7 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+
+.output8{
+    top: 80%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 55%;
+    text-align: center;
+    position: absolute;
+}
+
+.output8 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output8 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}
+
+.output9{
+    top: 80%;
+    border-radius: 20px;
+    width: 25px;
+    box-shadow: 20px 20px 40px;
+    left: 75%;
+    text-align: center;
+    position: absolute;
+}
+
+.output9 h6{
+    color: black;
+    top: 100%;
+    width: 170px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    background-color: blueviolet;
+    border-style: solid;
+}
+
+.output9 button{
+    top: 140%;
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    color: white;
+}

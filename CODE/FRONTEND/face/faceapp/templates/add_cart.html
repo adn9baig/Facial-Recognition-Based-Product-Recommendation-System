@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_cart</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+<body>
+    <div class="ad_rec">
+        <form method="post" action="{%url 'add_cart'%}">
+            {% csrf_token %}
+            <br><br>
+            <label>Enter name</label>
+            <br>
+            <input type="text" name="name" placeholder="buyer name" style="width: 200px; height:25px;">
+            <br><br>
+            <label>Enter card_number</label>
+            <br>
+            <input type="text" name="cr" maxlength="16" placeholder="card_number" style="width: 200px; height:25px;">
+            <br><br>
+            <label>Enter cvv</label>
+            <br>
+            <input type="password"  maxlength="3" name="cv" placeholder="Enter cvv" style="width: 200px; height:25px;">
+            <br><br>
+            <label>Enter bank name</label>
+            <br>
+            <input type="text" name="bn" placeholder="Enter bank name" style="width: 200px; height:25px;">
+            <br><br>
+            <label>Enter postel pin</label>
+            <br>
+            <input type="text" name="pn" placeholder="postel pin" style="width: 200px; height:25px;">
+            <br><br>
+            <label>Enter Mobile number</label>
+            <br>
+            <input type="text" name="mn" maxlength="10" placeholder="Mobile number" style="width: 200px; height:25px;">
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+        </form>
+    </div>
+</body>
+</html>
+

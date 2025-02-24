@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    background-color: blanchedalmond;
+    text-align: justify;
+    box-shadow: 10px 20px 20px;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.nav ul li{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover{
+    text-decoration-line: underline;
+    color: white;
+}
+
+.header1{
+    top: 20%;
+    left: 40%;
+    font-size: 20px;
+    position: absolute;
+    color: black;
+    box-shadow: 10px 20px 20px;
+}
+
+.camera{
+    top: 50%;
+    background-color: blueviolet;
+    border-radius: 20px;
+    height: 250px;
+    box-shadow: 20px 20px 40px;
+    left: 41%;
+    text-align: center;
+    position: absolute;
+}
+
+.camera button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    color: white;
+}
+
+.rec{
+    top: 20%;
+    border-radius: 20px;
+    left: 5%;
+    text-align: center;
+    position: absolute;
+}
+
+.rec button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    color: white;
+}
+
+.output{
+    top: 30%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 5%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+.output1{
+    top: 30%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 25%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output1 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+
+
+.output2{
+    top: 30%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 45%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output2 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+.output3{
+    top: 30%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 65%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output3 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+
+.output4{
+    top: 30%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 85%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output4 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+
+.output5{
+    top: 75%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 5%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output5 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+}
+
+.output6{
+    top: 75%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 25%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output6 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+
+.output7{
+    top: 75%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 45%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output7 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+.output8{
+    top: 75%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 65%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output8 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+
+.output9{
+    top: 75%;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 20px 20px 40px;
+    left: 85%;
+    text-align: center;
+    position: absolute;
+}
+
+
+.output9 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+} 
+
+
+
+.ad_rec{
+    top: 20%;
+    box-shadow: 20px 20px 50px;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    position: absolute; 
+}
+
+.ad_rec:hover{
+    top: 20%;
+    box-shadow: 20px 20px 50px;
+    width: 50%;
+    left: 25%;
+    background-color: blueviolet;
+    text-align: center;
+    position: absolute; 
+}
+
+
+.ad_rec button{
+    background-color: blueviolet;
+    width: 150px;
+    height: 25px;
+    color: white;
+}
+
+.ad_rec button:hover{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+}
+
+.chart{
+    right: 5%;
+    position: absolute;
+}
+.view_chart,table, th, td {
+    border:1px solid black;
+  }
+.view_chart{
+    top: 20%;
+    position: absolute;
+    left: 5%;
+}
+
+.view_chart button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+}
+
+.view_chart1,table, th, td {
+    border:1px solid black;
+  }
+.view_chart1{
+    top: 150%;
+    position: absolute;
+    left: 5%;
+}
+
+.view_chart1 button{
+    background-color: blue;
+    width: 150px;
+    color: white;
+}
+
+
+
+.tshirts{
+    top: 50%;
+    left: 4%;
+    position: absolute;
+}
+
+.tshirts,h6{
+    text-align: center;
+}
+
+.tshirts:hover{
+    top: 50%;
+    left: 4%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.shirts{
+    top: 50%;
+    left: 15%;
+    position: absolute;
+}
+
+.shirts,h6{
+    text-align: center;
+}
+
+.shirts:hover{
+    top: 50%;
+    left: 15%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.Shoes{
+    top: 50%;
+    left: 25%;
+    position: absolute;
+}
+
+.Shoes,h6{
+    text-align: center;
+}
+
+.Shoes:hover{
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.kid{
+    top: 50%;
+    left: 35%;
+    position: absolute;
+}
+
+.kid,h6{
+    text-align: center;
+}
+
+.kid:hover{
+    top: 50%;
+    left: 35%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.Mens{
+    top: 50%;
+    left: 45%;
+    position: absolute;
+}
+
+.Mens,h6{
+    text-align: center;
+}
+
+.Mens:hover{
+    top: 50%;
+    left: 45%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.Womens{
+    top: 50%;
+    left: 55%;
+    position: absolute;
+}
+
+.Womens,h6{
+    text-align: center;
+}
+
+.Womens:hover{
+    top: 50%;
+    left: 55%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.cam{
+    top: 50%;
+    left: 65%;
+    position: absolute;
+}
+
+.cam,h6{
+    text-align: center;
+}
+
+.cam:hover{
+    top: 50%;
+    left: 65%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.car{
+    top: 50%;
+    left: 75%;
+    position: absolute;
+}
+
+.car,h6{
+    text-align: center;
+}
+
+.car:hover{
+    top: 50%;
+    left: 75%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.head{
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+.head,h6{
+    text-align: center;
+}
+
+.head:hover{
+    top: 50%;
+    left: 85%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+
+
+
+.tshirts1{
+    top: 120%;
+    left: 4%;
+    position: absolute;
+}
+
+.tshirts1,h6{
+    text-align: center;
+}
+
+.tshirts1:hover{
+    top: 120%;
+    left: 4%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.shirts1{
+    top: 120%;
+    left: 15%;
+    position: absolute;
+}
+
+.shirts1,h6{
+    text-align: center;
+}
+
+.shirts1:hover{
+    top: 120%;
+    left: 15%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.Shoes1{
+    top: 120%;
+    left: 25%;
+    position: absolute;
+}
+
+.Shoes1,h6{
+    text-align: center;
+}
+
+.Shoes1:hover{
+    top: 120%;
+    left: 25%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.kid1{
+    top: 120%;
+    left: 35%;
+    position: absolute;
+}
+
+.kid1,h6{
+    text-align: center;
+}
+
+.kid1:hover{
+    top: 120%;
+    left: 35%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.Mens1{
+    top: 120%;
+    left: 45%;
+    position: absolute;
+}
+
+.Mens1,h6{
+    text-align: center;
+}
+
+.Mens1:hover{
+    top: 120%;
+    left: 45%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.Womens1{
+    top: 120%;
+    left: 55%;
+    position: absolute;
+}
+
+.Womens1,h6{
+    text-align: center;
+}
+
+.Womens1:hover{
+    top: 120%;
+    left: 55%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.cam1{
+    top: 120%;
+    left: 65%;
+    position: absolute;
+}
+
+.cam1,h6{
+    text-align: center;
+}
+
+.cam1:hover{
+    top: 120%;
+    left: 65%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+
+.car1{
+    top: 120%;
+    left: 75%;
+    position: absolute;
+}
+
+.car1,h6{
+    text-align: center;
+}
+
+.car1:hover{
+    top: 120%;
+    left: 75%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}
+.head1{
+    top: 120%;
+    left: 85%;
+    position: absolute;
+}
+
+.head1,h6{
+    text-align: center;
+}
+
+.head1:hover{
+    top: 120%;
+    left: 85%;
+    position: absolute;
+    box-shadow: 20px 20px 40px;
+}

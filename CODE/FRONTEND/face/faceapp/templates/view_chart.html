@@ -1,0 +1,35 @@
+{% extends "base1.html" %}
+{% block code %}
+<div class="view_chart">
+    
+    <form method="post" action="{%url 'cancel_order'%}">
+        {% csrf_token %}
+        <table>
+            <th>Buyer name</th>
+            <th>Mobile number</th>
+            <th>Image</th>
+            <th>Product name</th>
+            <th>product Price</th>
+            <th>Delivery Date</th>
+            <th>Order Cancel</th>
+            {% for i in data%}
+            <tr>
+                <td>{{i.u_name}}</td>
+                <td>{{i.m_num}}</td>
+                <td><img src="{{i.image2}}" style="height: 150px;"></td>
+                <td>{{i.name2}}</td>
+                <td>{{i.price2}}</td>
+                <td>{{i.de_date}}</td>
+                <td><button type="submit" value="{{i.id}}" name="id">Cancel</button></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+
+{% if msg == 'sucess' %}
+<script type="text/javascript">
+    alert('Orderd Canseled')
+</script>
+{% endif %}
+</div>
+{% endblock %}

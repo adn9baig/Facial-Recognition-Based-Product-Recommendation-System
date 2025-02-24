@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    color: white;
+    text-align: justify;
+    box-shadow: 10px 20px 20px;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.nav ul li{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.nav ul li a:hover{
+    text-decoration-line: underline;
+    color: white;
+}
+
+.header{
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+    position: absolute;
+    color: blueviolet;
+    box-shadow: 10px 20px 20px;
+}
+
+.udet{
+    top: 40%;
+    left: 40%;
+    font-size: 20px;
+    position: absolute;
+    color: black; 
+}
+
+.udet,table, th, td {
+    border:1px solid black;
+  }

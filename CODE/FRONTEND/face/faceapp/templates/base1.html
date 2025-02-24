@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style1.css"> <!-- Link the CSS file -->
+    <title>face</title>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li>
+            <a href="/uhome1" class="nav-link">Userhome</a>
+        </li>
+        <li>
+            <a href="/delinfo" class="nav-link">MyOrder</a>
+        </li>
+        <li>
+            <a href="/" class="nav-link">Logout</a>
+        </li>
+        <li>
+            <div class="chart">
+            <a href="/view_chart" class="nav-link">viewChart</a>
+            </div>
+        </li>
+    </ul>
+</div>
+{% block code %}
+{% endblock %}
+
+<!-- Content sections -->
+<div class="content-home">
+    <!-- Content for the Home page -->
+</div>
+<div class="content-login">
+    <!-- Content for the Login page -->
+</div>
+<div class="content-registration">
+    <!-- Content for the Registration page -->
+</div>
+
+<script src="/static/script.js"></script> <!-- Link the JavaScript file -->
+</body>
+</html>
